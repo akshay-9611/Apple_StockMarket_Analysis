@@ -7,6 +7,5 @@ statsmodels
 scipy
 yfinance
 timedelta
-pickle
 streamlit
 pmdarima
