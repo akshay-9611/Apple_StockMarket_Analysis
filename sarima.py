@@ -26,7 +26,6 @@ with open(SCALER_PATH, "rb") as f:
     scaler = pickle.load(f)
 
 st.subheader("📅 Select Date Range to View Historical Trends")
-
 min_date = df.index.min().date()
 max_date = df.index.max().date()
 
@@ -44,8 +43,6 @@ with col2:
     end_date = st.date_input(label="End date", min_value=min_date, max_value=max_date)
 
 filtered_df = df[(df.index.date >= start_date) & (df.index.date <= end_date)]
-
-
 st.subheader("📊 Historical Closing Price (Selected Range)")
 st.line_chart(filtered_df["Close"])
 
@@ -113,7 +110,7 @@ if st.button("🚀 Predict 30 Days After Selected Range"):
 
     prediction_start_date = pd.to_datetime(end_date)
 
-   
+
     nearest_index = df.index.asof(prediction_start_date)
     last_exog = exog_sarimax.loc[nearest_index].values.reshape(1, -1)
     future_exog = np.repeat(last_exog, 30, axis=0)
