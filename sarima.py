@@ -30,12 +30,12 @@ st.subheader("📅 Select Date Range to View Historical Trends")
 min_date = df.index.min().date()
 max_date = df.index.max().date()
 
-start_date, end_date = st.date_input(
-    "Choose date range:",
-    value=(min_date, max_date),
-    min_value=min_date,
-    max_value=max_date
-)
+# start_date, end_date = st.date_input(
+#     "Choose date range:",
+#     value=(min_date, max_date),
+#     min_value=min_date,
+#     max_value=max_date
+# )
 
 col1, col2 = st.columns(2)
 with col1:
