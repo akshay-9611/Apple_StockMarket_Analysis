@@ -7,7 +7,7 @@ from datetime import timedelta
 
 st.set_page_config(page_title="30-Day Stock Predictor (SARIMAX)", layout="wide")
 st.title("📈 Stock Price Predictor – Historical View + 30-Day Forecast")
-CSV_PATH = "AAPL.csv"
+CSV_PATH = "data/AAPL.csv"
 MODEL_PATH = "sarimax_model.pkl"
 SCALER_PATH = "feature_scaler.pkl"
 
