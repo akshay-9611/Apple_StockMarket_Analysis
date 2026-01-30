@@ -9,3 +9,4 @@ yfinance
 timedelta
 streamlit
 pmdarima
+altair==4.2.2
