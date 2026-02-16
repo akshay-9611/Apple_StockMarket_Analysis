@@ -1,5 +1,6 @@
-pandas
+streamlit==1.41.0
 numpy
+pandas
 matplotlib
 seaborn
 scikit-learn
@@ -7,6 +8,5 @@ statsmodels
 scipy
 yfinance
 timedelta
-streamlit
 pmdarima
 altair==4.2.2
